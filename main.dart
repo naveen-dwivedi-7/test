@@ -39,50 +39,50 @@ class GateLogReport extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
-                    elevation: 2,
-                    backgroundColor: Colors.green[900]),
-                onPressed: () {},
-                child: const Text(
-                  "Daily\nreport",
-                ),
+        child: Column(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
+                        elevation: 2,
+                        backgroundColor: Colors.green[900]),
+                    onPressed: () {},
+                    child: const Text(
+                      "Daily\nreport",
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
+                        elevation: 2,
+                        backgroundColor: Colors.green[900]),
+                    onPressed: () {},
+                    child: const Text(
+                      "Weekly\nReport",
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
+                        elevation: 2,
+                        backgroundColor: Colors.green[900]),
+                    onPressed: () {},
+                    child: const Text(
+                      "Monthly\nReport",
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(width: 20),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
-                    elevation: 2,
-                    backgroundColor: Colors.green[900]),
-                onPressed: () {},
-                child: const Text(
-                  "Weekly\nReport",
-                ),
-              ),
-              const SizedBox(width: 20),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
-                    elevation: 2,
-                    backgroundColor: Colors.green[900]),
-                onPressed: () {},
-                child: const Text(
-                  "Monthly\nReport",
-                ),
-              ),
-            ],
-          ),
-        ),
-        // insert date time field form here
-        /*
-         Form(
+            ),
+             Form(
             child: Column(
               children: <Widget>[
                 DateTimeFormField(),
@@ -122,7 +122,12 @@ class GateLogReport extends StatelessWidget {
                 ),
               ],
             ),
-          ),*/
+          ),
+          ],
+        ),
+        // insert date time field form here
+        
+        
       ),
     );
   }
