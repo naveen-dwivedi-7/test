@@ -81,6 +81,48 @@ class GateLogReport extends StatelessWidget {
           ),
         ),
         // insert date time field form here
+        /*
+         Form(
+            child: Column(
+              children: <Widget>[
+                DateTimeFormField(),
+                DateTimeFormField(
+                  decoration: const InputDecoration(
+                    hintStyle: TextStyle(color: Colors.black45),
+                    errorStyle: TextStyle(color: Colors.redAccent),
+                    border: OutlineInputBorder(),
+                    suffixIcon: Icon(Icons.event_note),
+                    labelText: 'My Super Date Time Field',
+                  ),
+                  firstDate: DateTime.now().add(const Duration(days: 10)),
+                  lastDate: DateTime.now().add(const Duration(days: 40)),
+                  initialDate: DateTime.now().add(const Duration(days: 20)),
+                  autovalidateMode: AutovalidateMode.always,
+                  validator: (DateTime? e) =>
+                      (e?.day ?? 0) == 1 ? 'Please not the first day' : null,
+                  onDateSelected: (DateTime value) {},
+                ),
+                const SizedBox(height: 50),
+                DateTimeFormField(
+                  decoration: const InputDecoration(
+                    hintStyle: TextStyle(color: Colors.black45),
+                    errorStyle: TextStyle(color: Colors.redAccent),
+                    border: OutlineInputBorder(),
+                    suffixIcon: Icon(Icons.event_note),
+                    labelText: 'Only time',
+                  ),
+                  mode: DateTimeFieldPickerMode.time,
+                  autovalidateMode: AutovalidateMode.always,
+                  validator: (DateTime? e) {
+                    return (e?.day ?? 0) == 1
+                        ? 'Please not the first day'
+                        : null;
+                  },
+                  onDateSelected: (DateTime value) {},
+                ),
+              ],
+            ),
+          ),*/
       ),
     );
   }
